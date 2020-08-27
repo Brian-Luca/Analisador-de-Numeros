@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        Analisador de Números
+    </header>
+    <section id="esc">
+        <div class="sect" id="form">
+            <div id="centro" style="height: 20vh;">
+                <label for="tnum" id="lab">
+                    Digite um número de 1 a 100
+                </label>
+                <input type="text" size="3" name="tnum" id="tnum" autocomplete="off" maxlength="3" autofocus
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input type="submit" class="botao" id="add" value="Adicionar">
+            </div>
+        </div>
+        <div class="sect" id="select">
+            <select name="sel" id="sel" multiple>e
+                <option disabled style="margin-bottom: 2vmin;">Registro</option>
+            </select>
+            <div id="bot">
+                <input type="submit" value="Finalizar" class="botao" id="fim">
+                <input type="submit" value="Apagar" class="botao" id="del">
+            </div>
+        </div>
+    </section>
+    <a href="https://twitter.com/Death_Draak" target="_blank">
+        <footer id="cop">
+            @Brian Luca
+        </footer>
+    </a>
+    <script src="js/efects.js"></script>
+</body>
+
+</html>

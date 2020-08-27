@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(148, 139, 12);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    font-size: calc(1em + 4vmin);
+    font-weight: bold;
+    text-shadow: 1vmin 1vmin .2vmin black;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.sect{
+    background-color: white;
+    box-shadow: 1vmin 1vmin 2vmin rgba(0, 0, 0, 0.5);
+    min-width: 50vh;
+    width: 30vw;
+    height: 50vh;
+    font-size: 3.5vh;
+    border-radius: 5%;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+
+#sel{
+    height: 80%;
+    width: 100%;
+    border-radius: 5% 2% 0 0;
+    padding: 2vmin 5vmin 1vmin;
+    overflow-y: auto;
+}
+
+#sel::-webkit-scrollbar {
+    width: 12px;
+}
+
+#sel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+}
+
+#sel::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(208, 255, 0); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#sel::-webkit-scrollbar-thumb:window-inactive {
+	background: rgb(148, 139, 12, .8); 
+}
+
+option{
+    text-align: center;
+}
+
+#bot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#centro{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.alinhar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#alinhar{
+    height: 15vh;
+    flex-flow: column;
+    align-items: center;
+}
+
+#tnum{
+    width: calc(2em + 2vw);
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10%;
+}
+
+#tnum:focus{
+    outline: none;
+    border-bottom: rgb(208, 255, 0) solid;
+
+}
+
+.botao{
+    font-size: calc(0.5em + 1vmin);
+    box-shadow: 0.2vmin .5vmin 0 black;
+    background: rgb(208, 255, 0);
+    border-radius: 10%;
+    border: 2px solid black;
+    font-size: small;
+    color: black;
+    padding: 2vmin;
+    cursor: pointer;
+}
+
+.botao:active{
+    position:relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.botao:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: calc(1em + 1vmin);
+    font-style: italic;
+    padding: 1.5vmin;
+    border: 1px solid cornsilk;
+    border-radius: 10vmin;
+    box-shadow: 0 0 1vmin black;
+}
+
+a:hover{
+    color: rgb(208, 255, 0);
+    text-decoration: underline;
+}
+
+#imagem {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 25%;
+}
+
+#sobrepor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+select:focus{
+    outline: none;
+}
+
+.meio{
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    width: 65vh;
+}
+
+#text{
+    font-size: calc(0.6em + 1vh);
+}
+
+p{
+    margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 699px) {
+    body{
+        height: 150vh;
+    }
+
+    section{
+        flex-flow: wrap column;
+        height: 120vh;
+    }
+
+    .result{
+        height: 50vh;
+    }
+
+    .body{
+        height: 100vh;
+    }
+}
